@@ -201,6 +201,9 @@ struct CarState {
   leftBlindspot @33 :Bool; # Is there something blocking the left lane change
   rightBlindspot @34 :Bool; # Is there something blocking the right lane change
 
+  radarDistance @40 :Int32;
+  trafficSign @41 :Int32;
+
   struct WheelSpeeds {
     # optional wheel speeds
     fl @0 :Float32;
