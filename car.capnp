@@ -203,6 +203,7 @@ struct CarState {
 
   radarDistance @40 :Int32;
   trafficSign @41 :Int32;
+  hudLead @42 :Float32;
 
   struct WheelSpeeds {
     # optional wheel speeds
@@ -355,6 +356,9 @@ struct CarControl {
     leftLaneVisible @7: Bool;
     rightLaneDepart @8: Bool;
     leftLaneDepart @9: Bool;
+    leadDistance @10: Float32;
+    leadProb @11: Float32;
+    leadSpeed @12: Float32;
 
     enum VisualAlert {
       # these are the choices from the Honda
